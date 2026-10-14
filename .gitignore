@@ -1,0 +1,41 @@
+# Dipendenze e build
+node_modules/
+dist/
+dev-dist/
+coverage/
+functions/lib/
+functions/node_modules/
+
+# Segreti e configurazione locale: MAI nel repo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+.firebaserc
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+
+# Dati bancari reali: MAI nel repo (i soli dati ammessi sono sintetici in fixtures/)
+*.csv
+*.xlsx
+*.xls
+*.ofx
+*.qif
+!tests/fixtures/*.csv
+backup*.json
+risparmia-backup*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
+
+# Impostazioni locali di Claude Code
+.claude/settings.local.json

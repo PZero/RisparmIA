@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocca il commit se contiene dati sensibili (IBAN, carte, chiavi, estratti conto).
+# Attivazione (una volta): git config core.hooksPath .githooks
+exec node scripts/check-sensitive.mjs
